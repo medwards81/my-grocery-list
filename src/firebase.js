@@ -1,16 +1,7 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/firestore';
-
-const firebaseConfig = {
-  apiKey: 'AIzaSyA-3zCX-0ZJVnXxEa99I4GY32aohOo8bVw',
-  authDomain: 'grocery-list-app-18eeb.firebaseapp.com',
-  databaseURL: 'https://grocery-list-app-18eeb.firebaseio.com',
-  projectId: 'grocery-list-app-18eeb',
-  storageBucket: 'grocery-list-app-18eeb.appspot.com',
-  messagingSenderId: '24475181652',
-  appId: '1:24475181652:web:da2bdd6a1ddc5107c043c1'
-};
+import firebaseConfig from './firebase-config';
 
 firebase.initializeApp(firebaseConfig);
 export const auth = firebase.auth();
